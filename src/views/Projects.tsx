@@ -14,7 +14,7 @@ import ap2Rapport from "../assets/ap2/AP-2.pdf"
 
 const Projects = () => {
     return (
-        <div id={"projet"} className={"h-screen flex justify-center items-center "}>
+        <div id={"projet"} className={"h-screen flex justify-center items-center"}>
             <Tabs defaultValue={"ap1"} className={"w-2/3"}>
                 <TabsList>
                     <TabsTrigger value={"ap1"}>AP1 - Plenty</TabsTrigger>
