@@ -6,19 +6,23 @@ import {
     CardHeader,
     CardTitle,
 } from "../@/components/ui/card"
+//icon
+import {ExternalLink, Eye} from "lucide-react";
+
+interface Link {
+    ref: string
+    title: string
+}
 
 type Props = {
     title: string
     description: string
-    img1?: string
-    img2?: string
-    img3?: string
-    img4?: string
-    link1?: string
-    link2?: string
+    imgs?: string[]
+    links?: Link[]
     pdf?: string
     titleLink1?: string
     titleLink2?: string
+    scrollAnimation?: boolean
 }
 
 export const ProjectCard = (props: Props) => {
@@ -29,21 +33,26 @@ export const ProjectCard = (props: Props) => {
                     <CardTitle>{props.title}</CardTitle>
                     <CardDescription>{props.description}</CardDescription>
                 </CardHeader>
-                <CardContent>
-                    <div id={"image-carroussel"} className={"flex justify-center items-center gap-5"}>
-                        <img src={props.img1} className={"w-1/2"}/>
-                        <img src={props.img2} className={"w-1/2"}/>
-                        <img src={props.img3} className={"w-1/2"}/>
-                        <img src={props.img4} className={"w-1/2"}/>
+                <CardContent className={"flex justify-center items-center flex-col"}>
+                    <div id={"image-carroussel"} className={"flex relative mx-auto gap-5 snap-x snap-mandatory overflow-x-auto bg-white w-full"}>
+                        {props.imgs && props.imgs.map((img) => (
+                            <div className={"snap-center shrink-0"}>
+                                <img src={img} className={"border rounded border-muted-foreground h-80"}/>
+                            </div>
+                        ))}
                     </div>
+                    {props.scrollAnimation ? (
+                        <div className={"animate-fade-left animate-infinite animate-ease-linear text-[#6E58E0] text-5xl text-center"}>○</div>
+                    ) : null}
                 </CardContent>
                 <CardFooter className={"flex flex-col justify-center items-start"}>
-                    <span className={"text-green-700"}>Liens vers les répertoires Github : </span>
-                    <a href={props.link1} target={"_blank"}>{props.titleLink1}</a>
-                    <a href={props.link2} target={"_blank"}>{props.titleLink2}</a>
+                    <span className={"text-[#6E58E0]"}>Liens vers les répertoires Github : </span>
+                    {props.links && props.links.map((link) => (
+                        <a href={link.ref} target={"_blank"} className={"flex items-center gap-2"}>{link.title} <ExternalLink className={"w-4"}/></a>
+                    ))}
 
-                    <span className={"text-green-700 mt-3"}>Rapport du projet : </span>
-                    <a href={props.pdf} target={"_blank"}>PDF rapport de projet</a>
+                    <span className={"text-[#6E58E0] mt-3"}>Rapport du projet : </span>
+                    <a href={props.pdf} target={"_blank"} className={"flex items-center gap-2"}>Visualiser le rapport de projet <Eye/></a>
                 </CardFooter>
             </Card>
         </>
