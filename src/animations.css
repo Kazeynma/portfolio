@@ -9,13 +9,18 @@
     transform-origin: bottom left;
 }
 
+.surlignedTitle:hover {
+    transition: color .1s ease;
+    color: #FBFBFE;
+}
+
 .surlignedTitle::before {
     content: " ";
     display: block;
     position: absolute;
     top: 0; right: 0; bottom: 0; left: 0;
     inset: 0 0 0 0;
-    background: hsl(200 100% 80%);
+    background: hsl(250, 69%, 61%);
     z-index: -1;
     transition: transform .3s ease;
 }
@@ -23,4 +28,5 @@
 .surlignedTitle {
     position: relative;
     font-size: 5rem;
+
 }

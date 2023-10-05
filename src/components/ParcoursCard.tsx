@@ -18,7 +18,7 @@ const ParcoursCard = (props: Props) => {
     return (
         <div className={props.className + " flex justify-center items-center gap-1"}>
             {props.orientation === "right" ? (
-                <span className={"text-xl absolute right-0 left-0 ml-auto mr-auto text-center"}>●</span>
+                <span className={"text-xl absolute right-0 left-0 ml-auto mr-auto text-center text-[#6E58E0]"}>●</span>
             ) : null}
             <Card>
                 <CardHeader>
@@ -30,7 +30,7 @@ const ParcoursCard = (props: Props) => {
                 </CardContent>
             </Card>
             {props.orientation === "left" ? (
-                <span className={"text-xl absolute absolute right-0 left-0 ml-auto mr-auto text-center"}>●</span>
+                <span className={"text-xl absolute absolute right-0 left-0 ml-auto mr-auto text-center text-[#6E58E0]"}>●</span>
             ) : null}
         </div>
     )

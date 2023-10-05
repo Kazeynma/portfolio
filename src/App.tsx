@@ -2,6 +2,8 @@
 import {BrowserRouter as Router, Routes, Route, Navigate} from "react-router-dom";
 import Principal from "./views/Principal.tsx";
 import AboutMe from "./views/AboutMe.tsx";
+
+import "./App.css"
 function App() {
   return (
     <>
