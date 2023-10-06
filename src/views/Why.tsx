@@ -1,12 +1,12 @@
 const Why = () => {
     return (
-        <div id={"pourquoi-informatique"} className={"h-screen flex justify-center items-center flex-col gap-5"}>
-            <span className={"text-3xl"}>Pourquoi l'informatique ?</span>
-            <div className={"flex justify-center items-center w-2/3 gap-5"}>
+        <div id={"pourquoi-informatique"} className={"min-h-screen flex justify-center items-center flex-col gap-5 mt-10"}>
+            <span className={"title-section"}>Pourquoi l'informatique ?</span>
+            <div className={"flex  justify-center items-center p-10 lg:p-0 lg:w-2/3 gap-5 flex-col lg:flex-row"}>
                 <div id={"left-side"}>
                     <img src={"https://cdn.pixabay.com/photo/2016/03/26/13/09/workspace-1280538_1280.jpg"} className={"w-96"}/>
                 </div>
-                <div id={"right-side"} className={"flex flex-col gap-3 w-1/2"}>
+                <div id={"right-side"} className={"flex flex-col gap-3 text-justify lg:w-1/2"}>
                     <p>
                         J'ai toujours aimé apprendre de nouvelles choses, et cela inclut l'informatique. J'ai découvert la programmation Python en seconde grâce à une option proposée par mon école.
                         C'est ce qui m'a poussé en première à prendre l'option NSI, j'ai également appris HTML et CSS, et j'ai pris beaucoup de plaisir à créer mon propre site web.

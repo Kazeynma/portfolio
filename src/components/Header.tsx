@@ -8,15 +8,22 @@ import {
     NavigationMenuList,
     NavigationMenuTrigger,
 } from "../@/components/ui/navigation-menu"
+import {
+    DropdownMenu,
+    DropdownMenuContent,
+    DropdownMenuItem,
+    DropdownMenuTrigger,
+} from "../@/components/ui/dropdown-menu"
+
 //icon
-import {Laptop, Goal, PencilRuler, Contact, Github, Linkedin} from "lucide-react";
+import {Laptop, Goal, PencilRuler, Contact, Github, Linkedin, Menu} from "lucide-react";
 
 
 const Header = () => {
     return (
-        <div id={"header-container"} className={"flex justify-around p-1 items-center border-b border-b-accent fixed left-0 right-0 z-10 bg-[#FBFBFE]"}>
-            <Link to="/" className={"title-section"}>ITH Kagnana</Link>
-            <NavigationMenu>
+        <div id={"header-container"} className={"flex w-full justify-around p-1 items-center border-b border-b-accent fixed left-0 right-0 z-10 bg-[#FBFBFE]"}>
+            <Link to="/" className={"title-section text-lg lg:text-xl"}>ITH Kagnana</Link>
+            <NavigationMenu className={"hidden lg:flex"}>
                 <NavigationMenuList>
                     <NavigationMenuItem className={"p-3"}>
                         <NavigationMenuTrigger className={"bg-[#FBFBFE] text-[#6E58E0] font-bold hover:text-[#6E58E0]"}> <Link to={"/a-propos#about"}>À propos de moi</Link></NavigationMenuTrigger>
@@ -45,6 +52,17 @@ const Header = () => {
                     <a href={"https://www.linkedin.com/in/kagnana-ith/"} target={"_blank"}><Linkedin/></a>
                 </div>
             </NavigationMenu>
+            <div className={"lg:hidden flex items-center"}>
+                <DropdownMenu>
+                    <DropdownMenuTrigger><Menu absoluteStrokeWidth/></DropdownMenuTrigger>
+                    <DropdownMenuContent>
+                        <DropdownMenuItem className={"bg-[#FBFBFE] text-[#6E58E0] font-bold hover:text-[#6E58E0]"}><Link to={"/a-propos#about"}>À propos de moi</Link></DropdownMenuItem>
+                        <DropdownMenuItem><Link to={"/accueil#mon-profil"}>Mon profil</Link></DropdownMenuItem>
+                        <DropdownMenuItem><Link to={"/accueil#competences"}>Mes compétences</Link></DropdownMenuItem>
+                        <DropdownMenuItem>Ma veille technologique</DropdownMenuItem>
+                    </DropdownMenuContent>
+                </DropdownMenu>
+            </div>
 
         </div>
     )

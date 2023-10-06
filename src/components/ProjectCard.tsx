@@ -37,7 +37,7 @@ export const ProjectCard = (props: Props) => {
                     <div id={"image-carroussel"} className={"flex relative mx-auto gap-5 snap-x snap-mandatory overflow-x-auto bg-white w-full"}>
                         {props.imgs && props.imgs.map((img) => (
                             <div className={"snap-center shrink-0"}>
-                                <img src={img} className={"border rounded border-muted-foreground h-80"}/>
+                                <img src={img} className={"border rounded border-muted-foreground h-52 lg:h-80"}/>
                             </div>
                         ))}
                     </div>
