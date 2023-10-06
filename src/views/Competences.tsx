@@ -14,9 +14,9 @@ import dockerLogo from "../assets/docker-logo.svg"
 
 const Competences = () => {
     return (
-        <div className={"min-h-screen flex justify-center items-center flex-col gap-5 p-10"}>
-            <h2 id={"competences"} className={"title-section"}>Mes compétences</h2>
-            <section id={"langage"} className={"flex flex-col w-4/5"}>
+        <div id={"competences"} className={"min-h-screen flex justify-center items-center flex-col gap-5 p-10"}>
+            <h2 className={"title-section"}>Mes compétences</h2>
+            <section  className={"flex flex-col w-4/5"}>
                 <span className={"text-lg"}>Langage</span>
                 <div className={"flex flex-wrap justify-center gap-5"}>
                     <CompetenceCard
