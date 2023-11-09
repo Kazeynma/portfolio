@@ -64,12 +64,15 @@ const Projects = () => {
                 <TabsContent value={"ap3"}>
                     <ProjectCard
                         title={"AP3 - eMeds"}
-                        description={"Application client lourd Java/Java Swing (en cours)"}
+                        description={"Application client lourd C# avec WinForms MySQL (en cours)"}
+                        links={[
+                            {ref: "https://github.com/Kazeynma/AP3-eMEDS", title: "https://github.com/Kazeynma/AP3-eMEDS"},
+                        ]}
                     />
 
                 </TabsContent>
                 <TabsContent value={"ap4"}>
-                    <ProjectCard title={"AP4 - ?"} description={""}/>
+                    <ProjectCard title={"AP4 - ?"} description={"Pas encore commencé"}/>
                 </TabsContent>
             </Tabs>
             <Accordion type="single" collapsible className={"w-full p-5 lg:hidden"}>

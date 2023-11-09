@@ -1,7 +1,6 @@
 //views
 import Presentation from "./Presentation.tsx";
 import Competences from "./Competences.tsx";
-import Projects from "./Projects.tsx";
 import Header from "../components/Header.tsx";
 import MyProfile from "./MyProfile.tsx";
 
@@ -12,7 +11,6 @@ const Principal = () => {
             <Presentation/>
             <MyProfile/>
             <Competences/>
-            <Projects/>
         </div>
     )
 }

@@ -2,6 +2,7 @@
 import {BrowserRouter as Router, Routes, Route, Navigate} from "react-router-dom";
 import Principal from "./views/Principal.tsx";
 import AboutMe from "./views/AboutMe.tsx";
+import BTSSection from "./views/BTSSection.tsx";
 
 import "./App.css"
 function App() {
@@ -14,6 +15,7 @@ function App() {
                     <Route path={"/accueil"} element={<Principal/>} />
                 </Route>
                 <Route path={"/a-propos"} element={<AboutMe/>}/>
+                <Route path={"/BTS"} element={<BTSSection/>}/>
             </Routes>
         </Router>
 
