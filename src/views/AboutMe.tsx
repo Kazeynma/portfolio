@@ -2,7 +2,6 @@ import Header from "../components/Header.tsx";
 import "../animations.css"
 //views
 import Parcours from "./Parcours.tsx";
-import Why from "./Why.tsx";
 const AboutMe = () => {
     return (
         <div id={"about-container"}>
@@ -11,7 +10,6 @@ const AboutMe = () => {
                 <h2 className={"animate-fade-down animate-once text-3xl surlignedTitle"}>À propos de moi</h2>
             </div>
             <Parcours/>
-            <Why/>
         </div>
     )
 }

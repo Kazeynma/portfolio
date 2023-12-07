@@ -46,7 +46,7 @@ const Parcours = () => {
                         title={"Première année de licence LEA anglais - coréen"}
                         description={"Université Lyon 3 - 2021/2022"}
                         content={
-                            <><span>Apprentissage de l'anglais économique et juridique ainsi que la langue ainsi que l'histoire coréenne</span></>
+                            <><span>Apprentissage de l'anglais économique et juridique ainsi que la langue et l'histoire coréenne</span></>
                         }
                         orientation={"right"}
                     />

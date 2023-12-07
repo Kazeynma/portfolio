@@ -16,7 +16,7 @@ import {
 } from "../@/components/ui/dropdown-menu"
 
 //icon
-import {Laptop, Goal, PencilRuler, Contact, Github, Linkedin, Menu, FolderOpen, BookOpen} from "lucide-react";
+import {Goal, PencilRuler, Contact, Github, Linkedin, Menu, FolderOpen, BookOpen} from "lucide-react";
 
 
 const Header = () => {
@@ -30,7 +30,6 @@ const Header = () => {
                         <NavigationMenuContent className={"flex flex-col items-start"}>
                             <div className={"w-80"}>
                                 <Link to={"/a-propos#mon-parcours"}><NavigationMenuLink className={"p-3 hover:bg-accent flex gap-2 items-center w-full"}><Goal absoluteStrokeWidth/> Mon parcours </NavigationMenuLink></Link>
-                                <Link to={"/a-propos#pourquoi-informatique"}><NavigationMenuLink className={"p-3 hover:bg-accent flex gap-2 items-center w-full"}><Laptop absoluteStrokeWidth/> Pourquoi l'informatique ? </NavigationMenuLink></Link>
                                 <NavigationMenuLink className={"p-3 hover:bg-accent flex gap-2 items-center w-full"}><PencilRuler absoluteStrokeWidth/> Mes projets personnels</NavigationMenuLink>
                                 <NavigationMenuLink className={"p-3 hover:bg-accent flex gap-2 items-center w-full"}><Contact absoluteStrokeWidth/>Curiculum Vitae</NavigationMenuLink>
                             </div>
