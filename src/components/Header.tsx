@@ -16,7 +16,7 @@ import {
 } from "../@/components/ui/dropdown-menu"
 
 //icon
-import {Goal, PencilRuler, Contact, Github, Linkedin, Menu, FolderOpen, BookOpen} from "lucide-react";
+import {Goal, PencilRuler, Contact, Github, Linkedin, Menu, FolderOpen, BookOpen, CheckCircle, Briefcase} from "lucide-react";
 
 
 const Header = () => {
@@ -29,19 +29,20 @@ const Header = () => {
                         <NavigationMenuTrigger className={"bg-[#FBFBFE] text-[#6E58E0] font-bold hover:text-[#6E58E0]"}> <Link to={"/a-propos#about"}>À propos de moi</Link></NavigationMenuTrigger>
                         <NavigationMenuContent className={"flex flex-col items-start"}>
                             <div className={"w-80"}>
-                                <Link to={"/a-propos#mon-parcours"}><NavigationMenuLink className={"p-3 hover:bg-accent flex gap-2 items-center w-full"}><Goal absoluteStrokeWidth/> Mon parcours </NavigationMenuLink></Link>
-                                <NavigationMenuLink className={"p-3 hover:bg-accent flex gap-2 items-center w-full"}><PencilRuler absoluteStrokeWidth/> Mes projets personnels</NavigationMenuLink>
-                                <NavigationMenuLink className={"p-3 hover:bg-accent flex gap-2 items-center w-full"}><Contact absoluteStrokeWidth/>Curiculum Vitae</NavigationMenuLink>
+                                <Link className={"w-full"} to={"/a-propos#mon-parcours"}><NavigationMenuLink className={"p-3 hover:bg-accent flex gap-2 items-center w-full"}><Goal absoluteStrokeWidth/> Parcours </NavigationMenuLink></Link>
+                                <Link className={"w-full"} to={"/a-propos#mon-parcours"}><NavigationMenuLink className={"p-3 hover:bg-accent flex gap-2 items-center w-full"}><Briefcase absoluteStrokeWidth/> Alternance </NavigationMenuLink></Link>
+                                <NavigationMenuLink className={"p-3 hover:bg-accent flex gap-2 items-center w-full"}><PencilRuler absoluteStrokeWidth/> Projets personnels</NavigationMenuLink>
+                                <Link className={"w-full"} to={"/a-propos#curiculum-vitae"}><NavigationMenuLink className={"p-3 hover:bg-accent flex gap-2 items-center w-full"}><Contact absoluteStrokeWidth/>Curiculum Vitae</NavigationMenuLink></Link>
                             </div>
                         </NavigationMenuContent>
                     </NavigationMenuItem>
                     <NavigationMenuItem className={"p-3"}>
-                        <NavigationMenuTrigger className={"bg-[#FBFBFE] text-[#6E58E0] font-bold hover:text-[#6E58E0]"}> <Link to={"/BTS#bts"}>Mon BTS</Link></NavigationMenuTrigger>
+                        <NavigationMenuTrigger className={"bg-[#FBFBFE] text-[#6E58E0] font-bold hover:text-[#6E58E0]"}> <Link to={"/BTS#bts"}>BTS SIO</Link></NavigationMenuTrigger>
                         <NavigationMenuContent className={"flex flex-col items-start"}>
                             <div className={"w-80"}>
-                                <Link to={"/BTS#projet"}><NavigationMenuLink className={"p-3 hover:bg-accent flex gap-2 items-center w-full"}><FolderOpen absoluteStrokeWidth/> Mes projets </NavigationMenuLink></Link>
-                                <Link to={"/BTS#ma-veille-technologique"}><NavigationMenuLink className={"p-3 hover:bg-accent flex gap-2 items-center w-full"}><BookOpen absoluteStrokeWidth/> Ma veille technologique </NavigationMenuLink></Link>
-                            <NavigationMenuLink className={"p-3 hover:bg-accent flex gap-2 items-center w-full"}><PencilRuler absoluteStrokeWidth/>Mon tableau de compétence</NavigationMenuLink>
+                                <Link className={"w-full"} to={"/BTS#projet"}><NavigationMenuLink className={"p-3 hover:bg-accent flex gap-2 items-center w-full"}><FolderOpen absoluteStrokeWidth/> Projets </NavigationMenuLink></Link>
+                                <Link className={"w-full"} to={"/BTS#ma-veille-technologique"}><NavigationMenuLink className={"p-3 hover:bg-accent flex gap-2 items-center w-full"}><BookOpen absoluteStrokeWidth/> Veille technologique </NavigationMenuLink></Link>
+                            <NavigationMenuLink className={"p-3 hover:bg-accent flex gap-2 items-center w-full"}><CheckCircle absoluteStrokeWidth/>Tableau de compétence</NavigationMenuLink>
                             </div>
                         </NavigationMenuContent>
                     </NavigationMenuItem>

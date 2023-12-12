@@ -5,9 +5,9 @@ type Props = {
 }
 const WiggleIcon = (props : Props) => {
     return (
-        <>
-            <props.icon className={"hover:animate-bounce hover:animate-ease-linear hover:animate-infinite"} absoluteStrokeWidth/>
-        </>
+        <div>
+            <props.icon absoluteStrokeWidth/>
+        </div>
     )
 }
 
