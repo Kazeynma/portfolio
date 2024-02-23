@@ -1,128 +1,135 @@
-//ui
-import {Separator} from "../@/components/ui/separator.tsx";
-import {
-    HoverCard,
-    HoverCardContent,
-    HoverCardTrigger,
-} from "../@/components/ui/hover-card.tsx"
-import {Button} from "../@/components/ui/button.tsx";
+import { useState } from "react";
 //component
 import CompetenceCard from "../components/CompetenceCard.tsx";
+import CompetenceBox from "../components/CompetenceBox.tsx";
 //icon
-import {icons} from "../data/iconsImports.ts";
-import {InfoIcon} from "lucide-react";
+import { icons } from "../data/iconsImports.ts";
+
+
 const Competences = () => {
+    const [showLevelLang, setShowLevelLang] = useState(false)
+    const [showLevelFram, setShowLevelFram] = useState(false)
+    const [showLevelSGBD, setShowLevelSGBD] = useState(false)
+    const [showLevelOutil, setShowLevelOutil] = useState(false)
+
     return (
         <div id={"competences"} className={"min-h-screen flex justify-center items-center flex-col gap-5 p-10"}>
             <h2 className={"title-section"}>
                 Mes compétences
-                <HoverCard>
-                    <HoverCardTrigger asChild>
-                        <Button className={"px-1"} variant={"ghost"}><InfoIcon/></Button>
-                    </HoverCardTrigger>
-                    <HoverCardContent>
-                        <div className={"font-normal text-lg"}>
-                            Petite légende d'étoiles
-                            <ul>
-                                <li>1 étoile : Débutant</li>
-                                <li>2 étoiles : Intermédiaire</li>
-                                <li>3 étoiles : Expert</li>
-                            </ul>
-                            Passez votre souris sur les compétences pour avoir le nombre de projets qui ont été fait en lien
-                        </div>
-                    </HoverCardContent>
-                </HoverCard>
             </h2>
-            <section  className={"flex flex-col w-4/5"}>
-                <span className={"text-lg"}>Langage</span>
-                <div className={"flex flex-wrap justify-center gap-5"}>
-                    <CompetenceCard
-                        title={"Javascript"}
-                        img={icons.javascript}
-                        content={"Intermédiaire"}
-                        level={1}
-                    />
-                    <CompetenceCard
-                        title={"Typescript"}
-                        img={icons.typescript}
-                        content={"Intermédiaire"}
-                        level={1}
-                    />
-                    <CompetenceCard
-                        title={"Java"}
-                        img={icons.java}
-                        content={"Débutant"}
-                        level={0}
-                    />
-                    <CompetenceCard
-                        title={"Swift"}
-                        img={icons.swift}
-                        content={"Intermédiaire"}
-                        level={1}
-                    />
-
-                    <CompetenceCard
-                        title={"C#"}
-                        img={icons.cSharp}
-                        content={"Débutant"}
-                        level={0}
-                    />
-                </div>
-            </section>
-            <Separator className={"w-2/3"}/>
-            <section id={"framework"} className={"flex flex-col w-4/5"}>
-                <span className={"text-lg"}>Framework/Librairie</span>
-                <div className={"flex flex-wrap justify-center gap-5"}>
-                    <CompetenceCard
-                        title={"ReactJS"}
-                        img={icons.react}
-                        content={"Intermédiaire"}
-                        level={1}
-                    />
-                    <CompetenceCard
-                        title={"SwiftUI"}
-                        img={icons.swiftUi}
-                        content={"Intermédiaire"}
-                        level={1}
-                    />
-                </div>
-            </section>
-            <Separator className={"w-2/3"}/>
-            <section id={"framework"} className={"flex flex-col w-4/5"}>
-                <span className={"text-lg"}>SGBD</span>
-                <div className={"flex flex-wrap justify-center gap-5"}>
-                    <CompetenceCard
-                        title={"MongoDB"}
-                        img={icons.mongoDB}
-                        content={"Intermédiaire"}
-                        level={1}
-                    />
-                    <CompetenceCard
-                        title={"MySQL"}
-                        img={icons.mySQL}
-                        content={"Débutant"}
-                        level={0}
-                    />
-                </div>
-            </section>
-            <Separator className={"w-2/3"}/>
-            <section id={"outil"} className={"flex flex-col w-4/5"}>
-                <span className={"text-lg"}>Outils</span>
-                <div className={"flex flex-wrap justify-center gap-5"}>
-                    <CompetenceCard
-                        title={"Git"}
-                        img={icons.git}
-                        content={"Intermédiaire"}
-                        level={1}
-                    />
-                    <CompetenceCard
-                        title={"Docker"}
-                        img={icons.docker}
-                        content={"Débutant"}
-                        level={0}
-                    />
-                </div>
-            </section>
+            <span>Passez votre souris pour voir le niveau de compétences</span>
+            <div className="flex flex-row flex-wrap gap-3 items-center justify-center">
+                <CompetenceBox
+                    showLevel={showLevelLang}
+                    setShowLevel={setShowLevelLang}
+                    title="Langage"
+                    content={
+                        <>
+                            <div className="flex flew-wrap justify-around">
+                                <CompetenceCard
+                                    showLevel={showLevelLang}
+                                    img={icons.javascript}
+                                    title="Javascript"
+                                    level={1}
+                                />
+                                <CompetenceCard
+                                    showLevel={showLevelLang}
+                                    img={icons.typescript}
+                                    title="Typescript"
+                                    level={1}
+                                />
+                                <CompetenceCard
+                                    showLevel={showLevelLang}
+                                    img={icons.swift}
+                                    title="Swift"
+                                    level={1}
+                                />
+                                <CompetenceCard
+                                    showLevel={showLevelLang}
+                                    img={icons.java}
+                                    title="Java"
+                                    level={0}
+                                />
+                                <CompetenceCard
+                                    showLevel={showLevelLang}
+                                    img={icons.cSharp}
+                                    title="C#"
+                                    level={0}
+                                />
+                            </div>
+                        </>
+                    }
+                />
+                <CompetenceBox
+                    showLevel={showLevelFram}
+                    setShowLevel={setShowLevelFram}
+                    title="Framework/Librairie"
+                    content={
+                        <>
+                            <div className="flex flew-wrap justify-around">
+                                <CompetenceCard
+                                    showLevel={showLevelFram}
+                                    title={"ReactJS"}
+                                    img={icons.react}
+                                    level={1}
+                                />
+                                <CompetenceCard
+                                    showLevel={showLevelFram}
+                                    title={"SwiftUI"}
+                                    img={icons.swiftUi}
+                                    level={1}
+                                />
+                            </div>
+                        </>
+                    }
+                />
+                <CompetenceBox
+                    showLevel={showLevelSGBD}
+                    setShowLevel={setShowLevelSGBD}
+                    title="SGBD"
+                    content={
+                        <>
+                            <div className="flex flew-wrap justify-around">
+                                <CompetenceCard
+                                    showLevel={showLevelSGBD}
+                                    title={"MongoDB"}
+                                    img={icons.mongoDB}
+                                    level={1}
+                                />
+                                <CompetenceCard
+                                    showLevel={showLevelSGBD}
+                                    title={"MySQL"}
+                                    img={icons.mySQL}
+                                    level={0}
+                                />
+                            </div>
+                        </>
+                    }
+                />
+                <CompetenceBox
+                    showLevel={showLevelOutil}
+                    setShowLevel={setShowLevelOutil}
+                    title="Outils"
+                    content={
+                        <>
+                            <div className="flex flew-wrap justify-around">
+                                <CompetenceCard
+                                    showLevel={showLevelOutil}
+                                    title={"Git"}
+                                    img={icons.git}
+                                    level={1}
+                                />
+                                <CompetenceCard
+                                    showLevel={showLevelOutil}
+                                    title={"Docker"}
+                                    img={icons.docker}
+                                    level={0}
+                                />
+                            </div>
+                        </>
+                    }
+                />
+            </div>
         </div>
     )
 }

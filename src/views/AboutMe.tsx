@@ -14,7 +14,7 @@ const AboutMe = () => {
             </div>
             <Parcours />
             <Alternance />
-            {/* <Competences /> */}
+            <Competences />
             <CuriculumVitae />
         </div>
     )
