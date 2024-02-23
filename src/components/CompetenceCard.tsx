@@ -1,9 +1,3 @@
-import {
-    Card, CardContent,
-    CardHeader,
-    CardTitle,
-} from "../@/components/ui/card"
-
 // icon
 import { StarIcon } from "lucide-react";
 
