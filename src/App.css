@@ -1,6 +1,6 @@
 #root {
   background: #FBFBFE;
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto Mono", monospace;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -20,6 +20,9 @@
 /*Personnalized*/
 
 .title-section {
-  font-size: 1.5rem;
-  font-weight: bold;
+  font-size: 2rem;
+}
+
+.title-salt {
+  font-family: "Rock Salt", cursive;
 }

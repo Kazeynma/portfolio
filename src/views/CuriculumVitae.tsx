@@ -5,8 +5,8 @@ const CuriculumVitae = () => {
             <span>Mon CV</span>
             <div className={""}>
                 <iframe loading="lazy"
-                        className={"w-full h-full absolute right-0 left-0 top-2/3 bottom-0 p-0 m-0"}
-                        src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAF2wWwSq_Y&#x2F;view?embed">
+                    className={"w-full h-full absolute right-0 left-0 top-2/3 bottom-0 p-0 m-0"}
+                    src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAF2wWwSq_Y&#x2F;view?embed">
                 </iframe>
             </div>
         </div>

@@ -23,6 +23,8 @@ import ap2Screen1 from "../assets/ap2/screen1.png"
 import ap2Screen2 from "../assets/ap2/screen2.png"
 import ap2Screen3 from "../assets/ap2/screen3.png"
 import ap2Screen4 from "../assets/ap2/screen4.png"
+// img icon
+import {icons} from "../data/iconsImports.ts";
 //pdf
 import ap2Rapport from "../assets/ap2/AP-2.pdf"
 
@@ -46,6 +48,13 @@ const Projects = () => {
                             {ref: "https://github.com/MarineRcher/Plenty-API", title: "API"}
                         ]}
                         imgs={[ap1Screen1, ap1Screen2, ap1Screen4, ap1Screen3]}
+                        competences={
+                            <div className={"flex w-full gap-1"}>
+                                <img className={"h-10"} src={icons.react} alt={"react-icon"}/>
+                                <img className={"h-10"} src={icons.javascript} alt={"js-icon"}/>
+                                <img className={"h-10"} src={icons.mongoDB} alt={"mongoDB-icon"}/>
+                            </div>
+                        }
                     />
                 </TabsContent>
                 <TabsContent value={"ap2"}>
@@ -59,15 +68,30 @@ const Projects = () => {
                         imgs={[ap2Screen1, ap2Screen2, ap2Screen3, ap2Screen4]}
                         pdf={ap2Rapport}
                         scrollAnimation={true}
+                        competences={
+                            <div className={"flex w-full gap-1"}>
+                                <img className={"h-10"} src={icons.react} alt={"react-icon"}/>
+                                <img className={"h-10"} src={icons.typescript} alt={"ts-icon"}/>
+                                <img className={"h-10"} src={icons.mongoDB} alt={"mongoDB-icon"}/>
+                            </div>
+                        }
                     />
                 </TabsContent>
                 <TabsContent value={"ap3"}>
                     <ProjectCard
                         title={"AP3 - eMeds"}
-                        description={"Application client lourd C# avec WinForms MySQL (en cours)"}
+                        description={"Application client lourd C# avec WinForms MySQL"}
                         links={[
                             {ref: "https://github.com/Kazeynma/AP3-eMEDS", title: "https://github.com/Kazeynma/AP3-eMEDS"},
                         ]}
+                        competences={
+                            <div className={"flex w-full gap-1"}>
+                                <img className={"h-10"} src={icons.winForms} alt={"react-icon"}/>
+                                <img className={"h-10"} src={icons.cSharp} alt={"ts-icon"}/>
+                                <img className={"h-10"} src={icons.mySQL} alt={"mongoDB-icon"}/>
+                            </div>
+                        }
+
                     />
 
                 </TabsContent>
@@ -111,7 +135,7 @@ const Projects = () => {
                     <AccordionContent>
                         <ProjectCard
                             title={"AP3 - eMeds"}
-                            description={"Application client lourd Java/Java Swing (en cours)"}
+                            description={"Application client lourd C# avec WinForms MySQL"}
                         />
                     </AccordionContent>
                 </AccordionItem>

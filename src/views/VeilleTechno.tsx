@@ -1,7 +1,7 @@
 const VeilleTechno = () => {
     return (
         <div className={"min-h-screen flex justify-center items-center flex-col gap-5 p-10 relative"}>
-            <h2 id={"ma-veille-technologique"} className={"title-section"}>Ma veille technologique</h2>
+            <h2 id={"veille-technologique"} className={"title-section"}>Veille technologique</h2>
             <span>Les langages et outils utilisés dans le développement web.</span>
             <div className={""}>
                 <iframe loading="lazy"

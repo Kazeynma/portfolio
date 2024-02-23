@@ -23,15 +23,19 @@ type Props = {
     titleLink1?: string
     titleLink2?: string
     scrollAnimation?: boolean
+    competences?: JSX.Element
 }
 
 export const ProjectCard = (props: Props) => {
     return (
         <>
             <Card>
-                <CardHeader>
+                <CardHeader className={"relative"}>
                     <CardTitle>{props.title}</CardTitle>
                     <CardDescription>{props.description}</CardDescription>
+                    <div className={"absolute right-5"}>
+                        {props.competences}
+                    </div>
                 </CardHeader>
                 <CardContent className={"flex justify-center items-center flex-col"}>
                     <div id={"image-carroussel"} className={"flex relative mx-auto gap-5 snap-x snap-mandatory overflow-x-auto bg-white w-full"}>
@@ -54,7 +58,9 @@ export const ProjectCard = (props: Props) => {
                     <span className={"text-[#6E58E0] mt-3"}>Rapport du projet : </span>
                     <a href={props.pdf} target={"_blank"} className={"flex items-center gap-2"}>Visualiser le rapport de projet <Eye/></a>
                 </CardFooter>
+
             </Card>
+
         </>
     )
 }

@@ -1,43 +1,71 @@
 //ui
 import {Separator} from "../@/components/ui/separator.tsx";
+import {
+    HoverCard,
+    HoverCardContent,
+    HoverCardTrigger,
+} from "../@/components/ui/hover-card.tsx"
+import {Button} from "../@/components/ui/button.tsx";
 //component
 import CompetenceCard from "../components/CompetenceCard.tsx";
 //icon
-import reactIcon from "../assets/React-icon.svg.png"
-import jsLogo from "../assets/JavaScript-logo.png"
-import tsLogo from "../assets/TypeScript-logo.png"
-import javaLogo from "../assets/Java_Logo.svg"
-import swiftLogo from "../assets/swift.png"
-import swiftUiLogo from "../assets/swiftui.png"
-import gitLogo from "../assets/Git-logo.png"
-import dockerLogo from "../assets/docker-logo.svg"
-
+import {icons} from "../data/iconsImports.ts";
+import {InfoIcon} from "lucide-react";
 const Competences = () => {
     return (
         <div id={"competences"} className={"min-h-screen flex justify-center items-center flex-col gap-5 p-10"}>
-            <h2 className={"title-section"}>Mes compétences</h2>
+            <h2 className={"title-section"}>
+                Mes compétences
+                <HoverCard>
+                    <HoverCardTrigger asChild>
+                        <Button className={"px-1"} variant={"ghost"}><InfoIcon/></Button>
+                    </HoverCardTrigger>
+                    <HoverCardContent>
+                        <div className={"font-normal text-lg"}>
+                            Petite légende d'étoiles
+                            <ul>
+                                <li>1 étoile : Débutant</li>
+                                <li>2 étoiles : Intermédiaire</li>
+                                <li>3 étoiles : Expert</li>
+                            </ul>
+                            Passez votre souris sur les compétences pour avoir le nombre de projets qui ont été fait en lien
+                        </div>
+                    </HoverCardContent>
+                </HoverCard>
+            </h2>
             <section  className={"flex flex-col w-4/5"}>
                 <span className={"text-lg"}>Langage</span>
                 <div className={"flex flex-wrap justify-center gap-5"}>
                     <CompetenceCard
                         title={"Javascript"}
-                        img={jsLogo}
-                        content={"Utilisation dans le cadre professionnel et personnel"}
+                        img={icons.javascript}
+                        content={"Intermédiaire"}
+                        level={1}
                     />
                     <CompetenceCard
                         title={"Typescript"}
-                        img={tsLogo}
-                        content={"Utilisation dans le cadre de projet"}
+                        img={icons.typescript}
+                        content={"Intermédiaire"}
+                        level={1}
                     />
                     <CompetenceCard
                         title={"Java"}
-                        img={javaLogo}
-                        content={"Utilisation dans le cadre de projet"}
+                        img={icons.java}
+                        content={"Débutant"}
+                        level={0}
                     />
                     <CompetenceCard
                         title={"Swift"}
-                        img={swiftLogo}
-                        content={"Utilisation dans le cadre professionnel"}
+                        img={icons.swift}
+                        content={"Intermédiaire"}
+                        level={1}
+                    />
+
+                    <CompetenceCard
+                        title={"C#"}
+                        img={icons.cSharp}
+                        content={"Débutant"}
+                        level={0}
                     />
                 </div>
             </section>
@@ -47,13 +75,33 @@ const Competences = () => {
                 <div className={"flex flex-wrap justify-center gap-5"}>
                     <CompetenceCard
                         title={"ReactJS"}
-                        img={reactIcon}
-                        content={"Utilisation dans le cadre professionnel et personnel"}
+                        img={icons.react}
+                        content={"Intermédiaire"}
+                        level={1}
                     />
                     <CompetenceCard
                         title={"SwiftUI"}
-                        img={swiftUiLogo}
-                        content={"Utilisation dans le cadre professionnel"}
+                        img={icons.swiftUi}
+                        content={"Intermédiaire"}
+                        level={1}
+                    />
+                </div>
+            </section>
+            <Separator className={"w-2/3"}/>
+            <section id={"framework"} className={"flex flex-col w-4/5"}>
+                <span className={"text-lg"}>SGBD</span>
+                <div className={"flex flex-wrap justify-center gap-5"}>
+                    <CompetenceCard
+                        title={"MongoDB"}
+                        img={icons.mongoDB}
+                        content={"Intermédiaire"}
+                        level={1}
+                    />
+                    <CompetenceCard
+                        title={"MySQL"}
+                        img={icons.mySQL}
+                        content={"Débutant"}
+                        level={0}
                     />
                 </div>
             </section>
@@ -63,13 +111,15 @@ const Competences = () => {
                 <div className={"flex flex-wrap justify-center gap-5"}>
                     <CompetenceCard
                         title={"Git"}
-                        img={gitLogo}
-                        content={"Utilisation dans tous mes projets avec Github"}
+                        img={icons.git}
+                        content={"Intermédiaire"}
+                        level={1}
                     />
                     <CompetenceCard
                         title={"Docker"}
-                        img={dockerLogo}
-                        content={"Apprentissage de la technologie"}
+                        img={icons.docker}
+                        content={"Débutant"}
+                        level={0}
                     />
                 </div>
             </section>

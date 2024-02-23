@@ -6,7 +6,7 @@ const Presentation = () => {
     return (
         <div id={"section-container"} className={"min-h-screen flex flex-col justify-center items-center gap-10"}>
             <div className={"flex justify-center items-center gap-1"}>
-                <h1 className={"animate-fade-left animate-once title-section text-right text-xl lg:text-4xl"}>BEYOND THE LIMIT</h1>
+                <h1 className={"animate-fade-left animate-once title-salt text-right text-xl lg:text-4xl px-3"}>BEYOND THE LIMIT</h1>
                 <Separator orientation={"vertical"} className={"h-24 w-0.5 bg-black"}/>
                 <div className={"flex flex-col animate-fade-right animate-once"}>
                     <h1 className={"title-section text-[#6E58E0] text-xl lg:text-4xl"}>ITH Kagnana</h1>

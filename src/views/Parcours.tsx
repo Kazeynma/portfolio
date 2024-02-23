@@ -1,12 +1,12 @@
 //ui
-import {Separator} from "../@/components/ui/separator.tsx";
+import { Separator } from "../@/components/ui/separator.tsx";
 //component
 import ParcoursCard from "../components/ParcoursCard.tsx";
 import MParcoursCardRight from "../components/parcours/MParcoursCardRight.tsx";
 const Parcours = () => {
     return (
-        <div id={"mon-parcours"} className={"min-h-screen flex flex-col justify-center items-center relative gap-5"}>
-            <h2 className={"title-section"}>Mon parcours</h2>
+        <div id={"parcours"} className={"min-h-screen flex flex-col justify-center items-center relative gap-5"}>
+            <h2 className={"title-section"}>Parcours scolaire</h2>
             <div id={"pc-view"} className={"w-2/3 gap-5 hidden lg:flex"}>
                 <div className={"w-1/2 flex flex-col"}>
                     <ParcoursCard
@@ -25,7 +25,7 @@ const Parcours = () => {
                         orientation={"left"}
                     />
 
-                    <ParcoursCard title={""} description={""} className={"invisible"}/>
+                    <ParcoursCard title={""} description={""} className={"invisible"} />
                     <ParcoursCard
                         title={"Baccalauréat "}
                         description={"Lycée Arbez Carme"}
@@ -39,9 +39,9 @@ const Parcours = () => {
                     />
 
                 </div>
-                <Separator orientation={"vertical"} className={"w-0.5 py-72 h-full bg-[#6E58E0]"}/>
+                <Separator orientation={"vertical"} className={"w-0.5 py-72 h-full bg-[#6E58E0]"} />
                 <div className={"w-1/2 flex flex-col gap-4"}>
-                    <ParcoursCard title={""} description={""} className={"invisible h-[200px]"}/>
+                    <ParcoursCard title={""} description={""} className={"invisible h-[200px]"} />
                     <ParcoursCard
                         title={"Première année de licence LEA anglais - coréen"}
                         description={"Université Lyon 3 - 2021/2022"}
@@ -62,9 +62,9 @@ const Parcours = () => {
                                 <li> - Wimova </li>
                             </ul>
                         </>
-                    }/>
-                    <MParcoursCardRight titre={"LEA anglais - coréen"} desc={"Lyon 3 - 2021/2022"} content={"Apprentissage de l'anglais économique et juridique ainsi que de la culture coréenne"}/>
-                    <MParcoursCardRight titre={"BAC Général"} desc={"Lycée arbez Carme - 2018/2021"} content={"Spécialité MATHS/SVT mention Bien"}/>
+                    } />
+                    <MParcoursCardRight titre={"LEA anglais - coréen"} desc={"Lyon 3 - 2021/2022"} content={"Apprentissage de l'anglais économique et juridique ainsi que de la culture coréenne"} />
+                    <MParcoursCardRight titre={"BAC Général"} desc={"Lycée arbez Carme - 2018/2021"} content={"Spécialité MATHS/SVT mention Bien"} />
                 </div>
             </div>
         </div>
