@@ -10,8 +10,12 @@ import dockerLogo from "../assets/docker-logo.svg"
 import cSharpLogo from "../assets/Csharp-logo.png"
 import mySQLLogo from "../assets/MySQL-logo.png"
 import winFormsLogo from "../assets/WinFormLogo.png"
+import phpLogo from "../assets/php-icon.png"
+import htmlLogo from "../assets/html-icon.png"
+import cssLogo from "../assets/css-icon.png"
+
 export const icons = {
-    react : reactIcon,
+    react: reactIcon,
     javascript: jsIcon,
     typescript: tsIcon,
     mongoDB: mongodbIcon,
@@ -22,5 +26,8 @@ export const icons = {
     docker: dockerLogo,
     cSharp: cSharpLogo,
     mySQL: mySQLLogo,
-    winForms: winFormsLogo
+    winForms: winFormsLogo,
+    php: phpLogo,
+    html: htmlLogo,
+    css: cssLogo
 }

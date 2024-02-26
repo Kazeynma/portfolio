@@ -17,7 +17,7 @@ const CompetenceBox = (props: Props) => {
         props.setShowLevel(false)
     )
     return (
-        <Card onMouseOver={hover} onMouseOut={noHover} className="w-1/2">
+        <Card onMouseOver={hover} onMouseOut={noHover} className="w-2/3">
             <CardHeader>
                 <CardTitle>{props.title}</CardTitle>
             </CardHeader>

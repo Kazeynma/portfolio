@@ -16,7 +16,7 @@ import {
 } from "../@/components/ui/dropdown-menu"
 
 //icon
-import { Goal, PencilRuler, Contact, Github, Linkedin, Menu, FolderOpen, BookOpen, CheckCircle, Briefcase, Star } from "lucide-react";
+import { Goal, Contact, Github, Linkedin, Menu, FolderOpen, BookOpen, CheckCircle, Briefcase, Star } from "lucide-react";
 
 
 const Header = () => {

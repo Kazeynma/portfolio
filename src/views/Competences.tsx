@@ -56,6 +56,12 @@ const Competences = () => {
                                     title="C#"
                                     level={0}
                                 />
+                                <CompetenceCard
+                                    showLevel={showLevelLang}
+                                    img={icons.php}
+                                    title="PHP"
+                                    level={0}
+                                />
                             </div>
                         </>
                     }

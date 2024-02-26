@@ -7,7 +7,7 @@ import {
     CardTitle,
 } from "../@/components/ui/card"
 //icon
-import {ExternalLink, Eye} from "lucide-react";
+import { ExternalLink, Eye } from "lucide-react";
 
 interface Link {
     ref: string
@@ -41,7 +41,7 @@ export const ProjectCard = (props: Props) => {
                     <div id={"image-carroussel"} className={"flex relative mx-auto gap-5 snap-x snap-mandatory overflow-x-auto bg-white w-full"}>
                         {props.imgs && props.imgs.map((img) => (
                             <div className={"snap-center shrink-0"}>
-                                <img src={img} className={"border rounded border-muted-foreground h-52 lg:h-80"}/>
+                                <img src={img} className={"border rounded border-muted-foreground h-52 lg:h-80"} />
                             </div>
                         ))}
                     </div>
@@ -52,11 +52,11 @@ export const ProjectCard = (props: Props) => {
                 <CardFooter className={"flex flex-col justify-center items-start"}>
                     <span className={"text-[#6E58E0]"}>Liens vers les répertoires Github : </span>
                     {props.links && props.links.map((link) => (
-                        <a href={link.ref} target={"_blank"} className={"flex items-center gap-2"}>{link.title} <ExternalLink className={"w-4"}/></a>
+                        <a href={link.ref} target={"_blank"} className={"flex items-center gap-2"}>{link.title} <ExternalLink className={"w-4"} /></a>
                     ))}
 
                     <span className={"text-[#6E58E0] mt-3"}>Rapport du projet : </span>
-                    <a href={props.pdf} target={"_blank"} className={"flex items-center gap-2"}>Visualiser le rapport de projet <Eye/></a>
+                    <a href={props.pdf} target={"_blank"} className={"flex items-center gap-2"}>Visualiser le rapport de projet <Eye /></a>
                 </CardFooter>
 
             </Card>
