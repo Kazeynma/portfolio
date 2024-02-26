@@ -1,4 +1,4 @@
-import tableauCompetence from "../assets/6- Annexe 6-1 - Tableau de synthèse - Epreuve E4 - BTS SIO.pdf"
+import tableauCompetence from "../assets/tableau-competence.pdf"
 import { Eye } from "lucide-react"
 
 const TableauCompt = () => {
