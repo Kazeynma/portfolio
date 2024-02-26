@@ -19,7 +19,7 @@ const CompetenceBox = (props: Props) => {
     return (
         <Card onMouseOver={hover} onMouseOut={noHover} className="w-2/3">
             <CardHeader>
-                <CardTitle>{props.title}</CardTitle>
+                <CardTitle className="w-full">{props.title}</CardTitle>
             </CardHeader>
             <CardContent className="flex flex-col md:flex-row items-center flew-wrap justify-around w-full">
                 {props.content}

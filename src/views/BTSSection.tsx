@@ -2,6 +2,7 @@ import Projects from "./Projects.tsx";
 import VeilleTechno from "./VeilleTechno.tsx";
 import TableauCompt from "./TableauCompt.tsx";
 import Header from "../components/Header.tsx";
+import Footer from "../components/Footer.tsx";
 
 const BTSSection = () => {
     return (
@@ -13,6 +14,7 @@ const BTSSection = () => {
             <Projects />
             <VeilleTechno />
             <TableauCompt />
+            <Footer />
         </div>
     )
 }

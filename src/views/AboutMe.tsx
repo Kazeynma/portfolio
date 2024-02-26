@@ -1,4 +1,5 @@
 import Header from "../components/Header.tsx";
+import Footer from "../components/Footer.tsx";
 import "../animations.css"
 //views
 import Parcours from "./Parcours.tsx";
@@ -16,6 +17,7 @@ const AboutMe = () => {
             <Alternance />
             <Competences />
             <CuriculumVitae />
+            <Footer />
         </div>
     )
 }
