@@ -21,7 +21,7 @@ const CompetenceBox = (props: Props) => {
             <CardHeader>
                 <CardTitle>{props.title}</CardTitle>
             </CardHeader>
-            <CardContent>
+            <CardContent className="flex flex-col md:flex-row items-center flew-wrap justify-around w-full">
                 {props.content}
             </CardContent>
         </Card>

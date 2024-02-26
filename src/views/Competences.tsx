@@ -25,44 +25,42 @@ const Competences = () => {
                     title="Langage"
                     content={
                         <>
-                            <div className="flex flew-wrap justify-around">
-                                <CompetenceCard
-                                    showLevel={showLevelLang}
-                                    img={icons.javascript}
-                                    title="Javascript"
-                                    level={1}
-                                />
-                                <CompetenceCard
-                                    showLevel={showLevelLang}
-                                    img={icons.typescript}
-                                    title="Typescript"
-                                    level={1}
-                                />
-                                <CompetenceCard
-                                    showLevel={showLevelLang}
-                                    img={icons.swift}
-                                    title="Swift"
-                                    level={1}
-                                />
-                                <CompetenceCard
-                                    showLevel={showLevelLang}
-                                    img={icons.java}
-                                    title="Java"
-                                    level={0}
-                                />
-                                <CompetenceCard
-                                    showLevel={showLevelLang}
-                                    img={icons.cSharp}
-                                    title="C#"
-                                    level={0}
-                                />
-                                <CompetenceCard
-                                    showLevel={showLevelLang}
-                                    img={icons.php}
-                                    title="PHP"
-                                    level={0}
-                                />
-                            </div>
+                            <CompetenceCard
+                                showLevel={showLevelLang}
+                                img={icons.javascript}
+                                title="Javascript"
+                                level={1}
+                            />
+                            <CompetenceCard
+                                showLevel={showLevelLang}
+                                img={icons.typescript}
+                                title="Typescript"
+                                level={1}
+                            />
+                            <CompetenceCard
+                                showLevel={showLevelLang}
+                                img={icons.swift}
+                                title="Swift"
+                                level={1}
+                            />
+                            <CompetenceCard
+                                showLevel={showLevelLang}
+                                img={icons.java}
+                                title="Java"
+                                level={0}
+                            />
+                            <CompetenceCard
+                                showLevel={showLevelLang}
+                                img={icons.cSharp}
+                                title="C#"
+                                level={0}
+                            />
+                            <CompetenceCard
+                                showLevel={showLevelLang}
+                                img={icons.php}
+                                title="PHP"
+                                level={0}
+                            />
                         </>
                     }
                 />
@@ -72,20 +70,18 @@ const Competences = () => {
                     title="Framework/Librairie"
                     content={
                         <>
-                            <div className="flex flew-wrap justify-around">
-                                <CompetenceCard
-                                    showLevel={showLevelFram}
-                                    title={"ReactJS"}
-                                    img={icons.react}
-                                    level={1}
-                                />
-                                <CompetenceCard
-                                    showLevel={showLevelFram}
-                                    title={"SwiftUI"}
-                                    img={icons.swiftUi}
-                                    level={1}
-                                />
-                            </div>
+                            <CompetenceCard
+                                showLevel={showLevelFram}
+                                title={"ReactJS"}
+                                img={icons.react}
+                                level={1}
+                            />
+                            <CompetenceCard
+                                showLevel={showLevelFram}
+                                title={"SwiftUI"}
+                                img={icons.swiftUi}
+                                level={1}
+                            />
                         </>
                     }
                 />
@@ -95,20 +91,18 @@ const Competences = () => {
                     title="SGBD"
                     content={
                         <>
-                            <div className="flex flew-wrap justify-around">
-                                <CompetenceCard
-                                    showLevel={showLevelSGBD}
-                                    title={"MongoDB"}
-                                    img={icons.mongoDB}
-                                    level={1}
-                                />
-                                <CompetenceCard
-                                    showLevel={showLevelSGBD}
-                                    title={"MySQL"}
-                                    img={icons.mySQL}
-                                    level={0}
-                                />
-                            </div>
+                            <CompetenceCard
+                                showLevel={showLevelSGBD}
+                                title={"MongoDB"}
+                                img={icons.mongoDB}
+                                level={1}
+                            />
+                            <CompetenceCard
+                                showLevel={showLevelSGBD}
+                                title={"MySQL"}
+                                img={icons.mySQL}
+                                level={0}
+                            />
                         </>
                     }
                 />
@@ -118,20 +112,18 @@ const Competences = () => {
                     title="Outils"
                     content={
                         <>
-                            <div className="flex flew-wrap justify-around">
-                                <CompetenceCard
-                                    showLevel={showLevelOutil}
-                                    title={"Git"}
-                                    img={icons.git}
-                                    level={1}
-                                />
-                                <CompetenceCard
-                                    showLevel={showLevelOutil}
-                                    title={"Docker"}
-                                    img={icons.docker}
-                                    level={0}
-                                />
-                            </div>
+                            <CompetenceCard
+                                showLevel={showLevelOutil}
+                                title={"Git"}
+                                img={icons.git}
+                                level={1}
+                            />
+                            <CompetenceCard
+                                showLevel={showLevelOutil}
+                                title={"Docker"}
+                                img={icons.docker}
+                                level={0}
+                            />
                         </>
                     }
                 />

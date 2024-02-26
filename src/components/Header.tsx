@@ -43,12 +43,15 @@ const Header = () => {
                             <div className={"w-80"}>
                                 <Link className={"w-full"} to={"/BTS#projet"}><NavigationMenuLink className={"p-3 hover:bg-accent flex gap-2 items-center w-full"}><FolderOpen absoluteStrokeWidth /> Projets </NavigationMenuLink></Link>
                                 <Link className={"w-full"} to={"/BTS#veille-technologique"}><NavigationMenuLink className={"p-3 hover:bg-accent flex gap-2 items-center w-full"}><BookOpen absoluteStrokeWidth /> Veille technologique </NavigationMenuLink></Link>
-                                <NavigationMenuLink className={"p-3 hover:bg-accent flex gap-2 items-center w-full"}><CheckCircle absoluteStrokeWidth />Tableau de compétence</NavigationMenuLink>
+                                <Link className={"w-full"} to={"/BTS#tableau-competence"}><NavigationMenuLink className={"p-3 hover:bg-accent flex gap-2 items-center w-full"}><CheckCircle absoluteStrokeWidth />Tableau de compétence</NavigationMenuLink></Link>
                             </div>
                         </NavigationMenuContent>
                     </NavigationMenuItem>
                     <NavigationMenuItem className={"p-3"}>
-                        <Link to={"/accueil#mon-profil"}>Mon profil</Link>
+                        <Link to={"/accueil#mon-profil"}>Introduction</Link>
+                    </NavigationMenuItem>
+                    <NavigationMenuItem className={"p-3"}>
+                        <Link to={"/accueil#mon-bts"}>Mon but</Link>
                     </NavigationMenuItem>
                 </NavigationMenuList>
                 <div className={"flex justify-center items-center gap-5 ml-5"}>
@@ -63,11 +66,12 @@ const Header = () => {
                         <DropdownMenuItem className={"bg-[#FBFBFE] text-[#6E58E0] font-bold hover:text-[#6E58E0]"}><Link to={"/a-propos#about"}>À propos de moi</Link></DropdownMenuItem>
                         <DropdownMenuItem className={"bg-[#FBFBFE] text-[#6E58E0] font-bold hover:text-[#6E58E0]"}><Link to={"/BTS#bts"}>Mon BTS</Link></DropdownMenuItem>
                         <DropdownMenuItem><Link to={"/accueil#mon-profil"}>Mon profil</Link></DropdownMenuItem>
+                        <DropdownMenuItem><Link to={"/accueil#mon-bts"}>Mon but</Link></DropdownMenuItem>
                     </DropdownMenuContent>
                 </DropdownMenu>
             </div>
 
-        </div>
+        </div >
     )
 }
 
