@@ -67,7 +67,7 @@ const Competences = () => {
                 <CompetenceBox
                     showLevel={showLevelFram}
                     setShowLevel={setShowLevelFram}
-                    title="Framework/Librairie"
+                    title="Framework - Librairie"
                     content={
                         <>
                             <CompetenceCard

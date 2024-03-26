@@ -7,7 +7,7 @@ const Alternance = () => {
         <div id={"alternance"} className={"min-h-screen flex flex-col justify-center items-center relative gap-5 p-5"}>
             <h2 className={"title-section"}>Alternance</h2>
             <div className={"flex flex-col items-left p-5 border rounded w-2/3 gap-3"}>
-                <div className="flex flex-row justify-between">
+                <div className="flex flex-col-reverse lg:flex-row lg:justify-between">
                     <div className="flex flex-row ">
                         <Laptop className="mr-5" />
                         <div className="flex flex-col">
@@ -15,7 +15,7 @@ const Alternance = () => {
                             <span className="text-[#6E58E0]">2022 - 2023</span>
                         </div>
                     </div>
-                    <img className="w-1/4" src={isitechLogo} alt="Isitech Logo" />
+                    <img className="w-1/2 self-center lg:w-1/4" src={isitechLogo} alt="Isitech Logo" />
                 </div>
                 <div>
                     <p>ISITECH est une école d'informatique en alternance qui propose plusieurs cursus différents en informatique. Elle y développe sa propre GRC.</p>
@@ -29,7 +29,7 @@ const Alternance = () => {
                 </div>
             </div>
             <div className={"flex flex-col items-left p-5 border rounded w-2/3 gap-3"}>
-                <div className="flex flex-row justify-between">
+                <div className="flex flex-col-reverse lg:flex-row lg:justify-between">
                     <div className="flex flex-row ">
                         <TabletSmartphone className="mr-5" />
                         <div className="flex flex-col">
@@ -37,7 +37,7 @@ const Alternance = () => {
                             <span className="text-[#6E58E0]">2023 - 2024</span>
                         </div>
                     </div>
-                    <img className="w-1/4" src={wimovaLogo} alt="Wimova Logo" />
+                    <img className="w-1/2 self-center lg:w-1/4" src={wimovaLogo} alt="Wimova Logo" />
                 </div>
                 <div>
                     <p>Wimova est une entreprise de mobilité B2B. </p>
