@@ -27,11 +27,18 @@ import ap3Screen1 from "../assets/ap3/ap3_menu.png"
 import ap3Screen2 from "../assets/ap3/ap3_ajout_ordonnance.png"
 import ap3Screen3 from "../assets/ap3/ap3_list_patient.png"
 import ap3Screen4 from "../assets/ap3/ap3_consultation_ordo.png"
+import ap4Screen1 from "../assets/ap4/screen_login_page.png"
+import ap4Screen2 from "../assets/ap4/screen_home.png"
+import ap4Screen3 from "../assets/ap4/screen_order_list.png"
+import ap4Screen4 from "../assets/ap4/screen_order_detail.png"
+
 // img icon
 import { icons } from "../data/iconsImports.ts";
 //pdf
+import ap1Rapport from "../assets/ap1/AP1 - Plenty.pdf"
 import ap2Rapport from "../assets/ap2/AP-2.pdf"
 import ap3Rapport from "../assets/ap3/AP3 - eMEDS.pdf"
+import ap4Rapport from "../assets/ap4/AP4 - GSBStock.pdf"
 
 const Projects = () => {
     return (
@@ -53,6 +60,7 @@ const Projects = () => {
                             { ref: "https://github.com/MarineRcher/Plenty-API", title: "API" }
                         ]}
                         imgs={[ap1Screen1, ap1Screen2, ap1Screen4, ap1Screen3]}
+                        pdf={ap1Rapport}
                         competences={
                             <div className={"flex w-full gap-1"}>
                                 <img className={"h-10"} src={icons.react} alt={"react-icon"} />
@@ -107,6 +115,11 @@ const Projects = () => {
                     <ProjectCard
                         title={"AP4 - GSBStock"}
                         description={"Application web PHP vanilla, clean archi MVC"}
+                        links={[
+                            { ref: "https://github.com/iKagnana/ap4-GSBStock", title: "https://github.com/iKagnana/ap4-GSBStock" },
+                        ]}
+                        imgs={[ap4Screen1, ap4Screen2, ap4Screen3, ap4Screen4]}
+                        pdf={ap4Rapport}
                         competences={
                             <div className={"flex w-full gap-1"}>
                                 <img className={"h-10"} src={icons.php} alt={"php-icon"} />
@@ -129,7 +142,7 @@ const Projects = () => {
                                 { ref: "https://github.com/MarineRcher/Plenty-API", title: "API" }
                             ]}
                             imgs={[ap1Screen1, ap1Screen2, ap1Screen4, ap1Screen3]}
-
+                            pdf={ap1Rapport}
                         />
                     </AccordionContent>
                 </AccordionItem>
@@ -167,7 +180,15 @@ const Projects = () => {
                 <AccordionItem value="ap4">
                     <AccordionTrigger>AP4 - GSBStocks</AccordionTrigger>
                     <AccordionContent>
-                        <ProjectCard title={"AP4 - ?"} description={""} />
+                        <ProjectCard
+                            title={"AP4 - ?"} description={""}
+                            links={[
+                                { ref: "https://github.com/iKagnana/ap4-GSBStock", title: "https://github.com/iKagnana/ap4-GSBStock" },
+                            ]}
+                            imgs={[ap4Screen1, ap4Screen2, ap4Screen3, ap4Screen4]}
+                            pdf={ap4Rapport}
+                            scrollAnimation={true}
+                        />
                     </AccordionContent>
                 </AccordionItem>
             </Accordion>
