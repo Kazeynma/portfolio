@@ -1,4 +1,6 @@
+import { HashLink as Link } from "react-router-hash-link";
 //ui
+import { Button } from "../@/components/ui/button.tsx";
 import { Separator } from "../@/components/ui/separator.tsx";
 //component
 import ParcoursCard from "../components/ParcoursCard.tsx";
@@ -13,14 +15,10 @@ const Parcours = () => {
                         title={"BTS SIO SLAM"}
                         description={"ISITECH - 2022/2024"}
                         content={
-                            <>
-                                <ul>
-                                    <li className={"font-bold"}>Première année de BTS en alternance chez Partner Formation - Isitech</li>
-                                    <span className={"italic ml-5 flex "}>Apprentie développeur web MERN (Mongo Express React Node)</span>
-                                    <li className={"font-bold"}>Deuxième année de BTS en alternance chez Wimova</li>
-                                    <span className={"italic ml-5"}>Apprentie développeur iOS</span>
-                                </ul>
-                            </>
+                            <div className="flex flex-col">
+                                <span className="text-[15px]">Parcours en apprentissage avec un rythme 3 semaines entreprise, 2 semaines école</span>
+                                <Button className={"bg-[#6e58e0] hover:bg-[#443784] m-1"}><Link to="/accueil#alternance" >Mon alternance →</Link></Button>
+                            </div>
                         }
                         orientation={"left"}
                     />
@@ -46,7 +44,7 @@ const Parcours = () => {
                         title={"Première année de licence LEA anglais - coréen"}
                         description={"Université Lyon 3 - 2021/2022"}
                         content={
-                            <><span>Apprentissage de l'anglais économique et juridique ainsi que la langue et l'histoire coréenne</span></>
+                            <><span className="text-[15px]">Apprentissage de la langue et de culture coréenne et anglaise avec des notions commerciales et juridiques</span></>
                         }
                         orientation={"right"}
                     />

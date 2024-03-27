@@ -26,18 +26,6 @@ const Header = () => {
             <NavigationMenu className={"hidden lg:flex"}>
                 <NavigationMenuList>
                     <NavigationMenuItem className={"p-3"}>
-                        <NavigationMenuTrigger className={"bg-[#FBFBFE] text-[#6E58E0] font-bold hover:text-[#6E58E0]"}> <Link to={"/a-propos#about"}>À propos de moi</Link></NavigationMenuTrigger>
-                        <NavigationMenuContent className={"flex flex-col items-start"}>
-                            <div className={"w-80"}>
-                                <Link className={"w-full"} to={"/a-propos#parcours"}><NavigationMenuLink className={"p-3 hover:bg-accent flex gap-2 items-center w-full"}><Goal absoluteStrokeWidth /> Parcours scolaire</NavigationMenuLink></Link>
-                                <Link className={"w-full"} to={"/a-propos#alternance"}><NavigationMenuLink className={"p-3 hover:bg-accent flex gap-2 items-center w-full"}><Briefcase absoluteStrokeWidth /> Alternance </NavigationMenuLink></Link>
-                                {/* <NavigationMenuLink className={"p-3 hover:bg-accent flex gap-2 items-center w-full"}><PencilRuler absoluteStrokeWidth /> Projets personnels</NavigationMenuLink> */}
-                                <Link className={"w-full"} to={"/a-propos#competences"}><NavigationMenuLink className={"p-3 hover:bg-accent flex gap-2 items-center w-full"}><Star absoluteStrokeWidth />Mes compétences</NavigationMenuLink></Link>
-                                <Link className={"w-full"} to={"/a-propos#curiculum-vitae"}><NavigationMenuLink className={"p-3 hover:bg-accent flex gap-2 items-center w-full"}><Contact absoluteStrokeWidth />Curiculum Vitae</NavigationMenuLink></Link>
-                            </div>
-                        </NavigationMenuContent>
-                    </NavigationMenuItem>
-                    <NavigationMenuItem className={"p-3"}>
                         <NavigationMenuTrigger className={"bg-[#FBFBFE] text-[#6E58E0] font-bold hover:text-[#6E58E0]"}> <Link to={"/BTS#bts"}>BTS SIO</Link></NavigationMenuTrigger>
                         <NavigationMenuContent className={"flex flex-col items-start"}>
                             <div className={"w-80"}>
@@ -48,24 +36,33 @@ const Header = () => {
                         </NavigationMenuContent>
                     </NavigationMenuItem>
                     <NavigationMenuItem className={"p-3"}>
-                        <Link to={"/accueil#mon-profil"}>Introduction</Link>
+                        <Link to={"/accueil#mon-profil"}>Mon profil</Link>
                     </NavigationMenuItem>
                     <NavigationMenuItem className={"p-3"}>
-                        <Link to={"/accueil#mon-bts"}>Mon but</Link>
+                        <Link to={"/accueil#parcours"}>Parcours</Link>
+                    </NavigationMenuItem>
+                    <NavigationMenuItem className={"p-3"}>
+                        <Link to={"/accueil#alternance"}>Alternance</Link>
+                    </NavigationMenuItem>
+                    <NavigationMenuItem className={"p-3"}>
+                        <Link to={"/accueil#competences"}>Compétences</Link>
                     </NavigationMenuItem>
                 </NavigationMenuList>
-                <div className={"flex justify-center items-center gap-5 ml-5"}>
-                    <a href={"https://github.com/Kazeynma"} target={"_blank"}><Github /></a>
-                    <a href={"https://www.linkedin.com/in/kagnana-ith/"} target={"_blank"}><Linkedin /></a>
-                </div>
+
             </NavigationMenu>
+            <div className={"flex justify-center items-center gap-5 ml-5"}>
+                <a href={"https://github.com/iKagnana"} target={"_blank"}><Github /></a>
+                <a href={"https://www.linkedin.com/in/kagnana-ith/"} target={"_blank"}><Linkedin /></a>
+            </div>
             <div className={"lg:hidden flex items-center"}>
                 <DropdownMenu>
                     <DropdownMenuTrigger><Menu absoluteStrokeWidth /></DropdownMenuTrigger>
                     <DropdownMenuContent>
-                        <DropdownMenuItem className={"bg-[#FBFBFE] text-[#6E58E0] font-bold hover:text-[#6E58E0]"}><Link to={"/a-propos#about"}>À propos de moi</Link></DropdownMenuItem>
                         <DropdownMenuItem className={"bg-[#FBFBFE] text-[#6E58E0] font-bold hover:text-[#6E58E0]"}><Link to={"/BTS#bts"}>Mon BTS</Link></DropdownMenuItem>
-                        <DropdownMenuItem><Link to={"/accueil#mon-profil"}>Mon profil</Link></DropdownMenuItem>
+                        <DropdownMenuItem><Link to={"/accueil#mon-profil"}>Accueil</Link></DropdownMenuItem>
+                        <DropdownMenuItem><Link to={"/accueil#mon-profil"}>Parcours</Link></DropdownMenuItem>
+                        <DropdownMenuItem><Link to={"/accueil#mon-profil"}>Alternance</Link></DropdownMenuItem>
+                        <DropdownMenuItem><Link to={"/accueil#mon-profil"}>Compétences</Link></DropdownMenuItem>
                         <DropdownMenuItem><Link to={"/accueil#mon-bts"}>Mon but</Link></DropdownMenuItem>
                     </DropdownMenuContent>
                 </DropdownMenu>
