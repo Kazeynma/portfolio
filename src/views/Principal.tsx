@@ -6,7 +6,6 @@ import MyBTS from "./MyBTS.tsx";
 import Parcours from "./Parcours.tsx";
 import Alternance from "./Alternance.tsx";
 import Competences from "./Competences.tsx";
-import CuriculumVitae from "./CuriculumVitae.tsx";
 import Footer from "../components/Footer.tsx";
 
 const Principal = () => {
