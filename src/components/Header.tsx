@@ -16,7 +16,7 @@ import {
 } from "../@/components/ui/dropdown-menu"
 
 //icon
-import { Goal, Contact, Github, Linkedin, Menu, FolderOpen, BookOpen, CheckCircle, Briefcase, Star } from "lucide-react";
+import { Github, Linkedin, Menu, FolderOpen, BookOpen, CheckCircle } from "lucide-react";
 
 
 const Header = () => {
@@ -60,9 +60,9 @@ const Header = () => {
                     <DropdownMenuContent>
                         <DropdownMenuItem className={"bg-[#FBFBFE] text-[#6E58E0] font-bold hover:text-[#6E58E0]"}><Link to={"/BTS#bts"}>Mon BTS</Link></DropdownMenuItem>
                         <DropdownMenuItem><Link to={"/accueil#mon-profil"}>Accueil</Link></DropdownMenuItem>
-                        <DropdownMenuItem><Link to={"/accueil#mon-profil"}>Parcours</Link></DropdownMenuItem>
-                        <DropdownMenuItem><Link to={"/accueil#mon-profil"}>Alternance</Link></DropdownMenuItem>
-                        <DropdownMenuItem><Link to={"/accueil#mon-profil"}>Compétences</Link></DropdownMenuItem>
+                        <DropdownMenuItem><Link to={"/accueil#parcours"}>Parcours</Link></DropdownMenuItem>
+                        <DropdownMenuItem><Link to={"/accueil#alternance"}>Alternance</Link></DropdownMenuItem>
+                        <DropdownMenuItem><Link to={"/accueil#competences"}>Compétences</Link></DropdownMenuItem>
                         <DropdownMenuItem><Link to={"/accueil#mon-bts"}>Mon but</Link></DropdownMenuItem>
                     </DropdownMenuContent>
                 </DropdownMenu>

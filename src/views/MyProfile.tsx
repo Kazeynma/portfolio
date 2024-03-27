@@ -1,4 +1,3 @@
-import { HashLink as Link } from "react-router-hash-link";
 //component
 import WiggleIcon from "../components/WiggleIcon.tsx";
 //ui
