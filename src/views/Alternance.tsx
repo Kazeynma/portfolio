@@ -6,7 +6,7 @@ const Alternance = () => {
     return (
         <div id={"alternance"} className={"min-h-screen flex flex-col justify-center items-center relative gap-5 p-5"}>
             <h2 className={"title-section"}>Alternance</h2>
-            <div className="flex flex-col lg:flex-row gap-1">
+            <div className="flex flex-col items-center lg:items-stretch lg:flex-row gap-1">
                 <div className={"flex flex-col items-left p-5 border rounded w-2/3 gap-3"}>
                     <div className="flex flex-col-reverse lg:flex-row lg:justify-between">
                         <div className="flex flex-row ">

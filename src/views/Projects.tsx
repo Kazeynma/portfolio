@@ -120,6 +120,7 @@ const Projects = () => {
                         ]}
                         imgs={[ap4Screen1, ap4Screen2, ap4Screen3, ap4Screen4]}
                         pdf={ap4Rapport}
+                        scrollAnimation={true}
                         competences={
                             <div className={"flex w-full gap-1"}>
                                 <img className={"h-10"} src={icons.php} alt={"php-icon"} />

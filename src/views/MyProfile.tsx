@@ -26,11 +26,11 @@ const MyProfile = () => {
                             Déterminée et ambitieuse
                         </p>
                     </div>
-                    <p>
+                    <p className="text-center lg:text-left">
                         Apprentie développeur iOS actuellement en BTS SIO SLAM.
                         Je me passionne pour la création d'application web et mobile.
                     </p>
-                    <p className={"italic text-[#6e58e0]"}>
+                    <p className={"text-center lg:text-left italic text-[#6e58e0]"}>
                         Objectif : Faire vivre mes idées
                     </p>
 

@@ -16,7 +16,7 @@ import {
 } from "../@/components/ui/dropdown-menu"
 
 //icon
-import { Github, Linkedin, Menu, FolderOpen, BookOpen, CheckCircle } from "lucide-react";
+import { Github, Linkedin, Menu, FolderOpen, BookOpen, CheckCircle, Mail } from "lucide-react";
 
 
 const Header = () => {
@@ -53,6 +53,7 @@ const Header = () => {
             <div className={"flex justify-center items-center gap-5 ml-5"}>
                 <a href={"https://github.com/iKagnana"} target={"_blank"}><Github /></a>
                 <a href={"https://www.linkedin.com/in/kagnana-ith/"} target={"_blank"}><Linkedin /></a>
+                <a href={"mailto:ikagnana@gmail.com"}><Mail /></a>
             </div>
             <div className={"lg:hidden flex items-center"}>
                 <DropdownMenu>
