@@ -101,7 +101,7 @@ const Competences = () => {
                                 showLevel={showLevelSGBD}
                                 title={"MySQL"}
                                 img={icons.mySQL}
-                                level={0}
+                                level={1}
                             />
                         </>
                     }
@@ -116,6 +116,12 @@ const Competences = () => {
                                 showLevel={showLevelOutil}
                                 title={"Git"}
                                 img={icons.git}
+                                level={1}
+                            />
+                            <CompetenceCard
+                                showLevel={showLevelOutil}
+                                title={"Azure DevOps"}
+                                img={icons.azureDevops}
                                 level={1}
                             />
                             <CompetenceCard

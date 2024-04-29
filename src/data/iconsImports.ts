@@ -13,6 +13,7 @@ import winFormsLogo from "../assets/WinFormLogo.png"
 import phpLogo from "../assets/php-icon.png"
 import htmlLogo from "../assets/html-icon.png"
 import cssLogo from "../assets/css-icon.png"
+import azureDevOpsLogo from "../assets/azure-devops-logo.png"
 
 export const icons = {
     react: reactIcon,
@@ -29,5 +30,6 @@ export const icons = {
     winForms: winFormsLogo,
     php: phpLogo,
     html: htmlLogo,
-    css: cssLogo
+    css: cssLogo,
+    azureDevops: azureDevOpsLogo
 }
