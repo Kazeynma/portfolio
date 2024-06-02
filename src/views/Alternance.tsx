@@ -22,7 +22,7 @@ const Alternance = () => {
                         <p>ISITECH est une école d'informatique en alternance qui propose plusieurs cursus différents en informatique. Elle y développe sa propre GRC.</p>
                     </div>
                     <div>
-                        <p>Mes missions en tant que développeuse fullstack était de créer une interface web permettant aux utilisateurs de retrouver toutes les informations nécessaire sur un dashboard.</p>
+                        <p>Mes missions en tant que développeuse fullstack était de créer par exemple une interface web permettant aux utilisateurs de retrouver toutes les informations nécessaires sur un dashboard.</p>
                         <p>J'ai également fait de la résolution de bogues.</p>
                     </div>
                     <div className="mt-auto">
